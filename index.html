@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Evolution of Monkeys - Ryan Nourbakhsh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .container-fluid {
+        padding-top: 3rem;
+      }
+      body {
+        color: black;
+      }
+      .list-group-item.active > a {
+        color: white;
+      }
+      .list-group-item.active > a:hover {
+        color: gray;
+      }
+        p {
+       font-weight: bold;
+       font-size: 24px;
+      }
+
+
+      body {
+        background-image: url('backkl.jpg'); /* Replace with your image path */
+        background-size: cover; /* Cover the entire page */
+        background-attachment: fixed; /* Make it fixed, so it doesn't scroll with the page */
+        background-repeat: no-repeat; /* Don't repeat the image */
+        background-position: center; /* Center the image on the page */
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          // smooth scroll
+          if (this.hash !== "") {
+            var hash = this.hash;
+            var scrollPos = $(hash).offset().top - 50;
+            scrollPos = scrollPos < 0 ? 0 : scrollPos;
+            $("html, body").animate(
+              {
+                scrollTop: scrollPos,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+            $(".list-group-item > span").parent().removeClass("active");
+            $(".list-group-item > span" + hash)
+              .parent()
+              .addClass("active");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav
+      id="archeanNav"
+      class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"
+    >
+      <a class="navbar-brand" href="#">Evolution of Monkeys - Ryan Nourbakhsh</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#archeanNavbarItems"
+        aria-controls="archeanNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="archeanNavbarItems">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#pageIntro">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pageCond">Origins</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pageEarlyLife">Old Vs. New World</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pageEnd">Beyond</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h1 id="pageIntro">Overview</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>
+            The evolution of monkeys and primates is a complex journey that
+            spans millions of years. There are over 250 different species of monkeys?.
+            These species are divided into two main groups — Old World and New World monkeys.
+
+            <sup><a href="#berkeleyArchean">1</a></sup>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 id="pageCond">Origins</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>
+            Monkeys originated in Africa and the first group known to have reached South America are thought to have migrated there up to 40 million years ago, when the land masses were probably between 1500 and 2000 kilometres apart, around a quarter of the distance now.
+            Early Monkeys they had fewer teeth, less fox-like snouts, larger brains, and increasingly more forward-looking eyes. These and other anatomical features suggest that the early monkeys were becoming mostly diurnal fruit and seed eating forest tree-dwellers
+            <sup><a href="#nasaTemps">2</a></sup>
+          </p>
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
+          
+
+           <p>
+            Based on the age of the fossils, the team estimates that the ancestor of all primates —including plesiadapiforms and today's primates such as lemurs, monkeys and apes — likely emerged by the Late Cretaceous and lived alongside large dinosaurs. <a href="#youngEarth">3</a></sup>.
+          </p> 
+
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
+          <p>
+            Monkeys are known for their intelligence and have been shown to possess a variety of cognitive abilities, such as problem-solving, memory, and understanding of basic arithmetic.
+            Monkeys communicate with each other using vocalizations, facial expressions, and body movements. Some species have quite elaborate forms of communication that can convey specific messages. <sup><a href="#hydroTherm">4</a></sup>.
+            
+          </p> 
+          <p>.</p>
+          <p>.</p>
+          
+          <p>While monkeys are not direct ancestors of humans, both humans and monkeys share a common primate ancestor that lived millions of years ago. The evolutionary line that led to humans branched off from the one that led to modern monkeys at some point in the distant past.
+
+            The study of primates, including monkeys, provides valuable insights into the evolution of complex social behaviors and intelligence, as well as our own origins as part of the primate family. <sup><a href="#japanGeosci">5</a></sup>. </p>
+
+            
+          
+          
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-light">
+            <img
+              class="card-img-top img-fluid"
+              src="1.png"
+              width="500"
+              height="300"
+              alt="image"
+            />
+           
+          </div>
+          
+         
+          <div class="card bg-light">
+            <img
+              class="card-img-top img-fluid"
+              src="3.png"
+              width="500"
+              height="300"
+              alt="image"
+            />
+           
+          </div>
+
+          <div class="card bg-light">
+            <img
+              class="card-img-top img-fluid"
+              src="4.png"
+              width="500"
+              height="300"
+              alt="image"
+            />
+           
+          </div>
+         
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 id="pageEarlyLife">Old Vs. New World</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card bg-light">
+            <img
+              class="card-img-top img-fluid"
+              src="5.png"
+              width="500"
+              height="300"
+              alt="image"
+            />
+            <img
+            class="card-img-top img-fluid"
+            src="6.png"
+            width="500"
+            height="300"
+            alt="image"
+          />
+          <img
+          class="card-img-top img-fluid"
+          src="7.png"
+          width="500"
+          height="300"
+          alt="image"
+        />
+        <img
+        class="card-img-top img-fluid"
+        src="8.png"
+        width="500"
+        height="300"
+        alt="image"
+      />
+          </div>
+          
+        </div>
+        <div class="col">
+          <p>
+            Old World Monkeys (Cercopithecoidea): The ancestors of Old World monkeys are believed to have first appeared in the fossil record around 25 to 30 million years ago, during the Oligocene epoch. These monkeys are native to Africa and Asia.
+
+            New World Monkeys (Platyrrhini): New World monkeys are thought to have diverged from their Old World counterparts after the African and South American continents separated, which began around 120 million years ago and was completed by around 30 million years ago. New World monkeys appeared in South America, an event which is estimated to have occurred roughly 40 million years ago, possibly a bit later, in the early Oligocene.
+            <sup><a href="#lifeFirst2">6</a></sup>.
+          </p>
+
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
+
+          <p>
+            The gap between the divergence of the two groups is not precisely known, but it likely spans several million years. The split itself is thought to have occurred sometime in the Oligocene when the primates that would become New World monkeys migrated across the Atlantic Ocean to South America, which was a much shorter distance at that time due to lower sea levels and different ocean currents than today.
+          </p>
+
+          <p>.</p>
+          <p>.</p>
+         
+         
+          
+          <p>
+            These two groups of monkeys can be distinguished by several physical characteristics:
+
+    Noses: Old World monkeys have narrow, downward-facing nostrils, while New World monkeys typically have round, sideways-facing nostrils.
+
+    Tails: Many New World monkeys have prehensile tails, which function like a fifth limb and are used for grasping and hanging. In contrast, Old World monkeys do not have prehensile tails, and some don't have tails at all.
+
+    Dentition: The dental formula also differs between the two groups. Most Old World monkeys have 32 teeth (similar to humans), while New World monkeys have 36.
+
+    Vision: Most Old World monkeys have trichromatic color vision like humans, whereas New World monkeys vary, with some species having trichromatic vision and others being dichromatic or even monochromatic.
+
+    Skeletal Differences: There are also differences in the skeletal structure, particularly in the arrangement of the ear bones and the structure of the nose.
+
+It's important to note that while the divergence between Old World and New World monkeys is significant, they share many of the typical primate features such as forward-facing eyes, high degree of limb mobility, and significant parental care of offspring. Their evolutionary history reflects how species can adapt to different environments and ecological niches over millions of years.
+<sup><a href="#berkleyCyano">7</a></sup>.
+          </p>
+
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
+          <p>
+            An interesting old world monkey I found was the langur monkey. They belong to the Colobinae subfamily, which is part of the Cercopithecoidea superfamily. Langurs are found in Asia, ranging from India to Southeast Asia and down into the Indonesian archipelago.
+
+Langurs are typically slender with long limbs and tails. They have a distinctive mode of locomotion called brachiation that allows them to swing from branch to branch using their arms. Many langur species are leaf-eaters and have complex stomachs for digesting fibrous plant materials. The reason I found this specific one interesting was a story in india were A langur monkey jumped 160-feet off an electricity pylon and landed safely on the ground. Langur monkeys are arboreal, meaning they live in trees, and their leg strength is a key adaptation for their lifestyle. Langurs are known for their remarkable agility and ability to make long jumps between tree branches. Some species of langurs can leap distances of over 10 meters (about 33 feet) from one tree to another. This is a clear indication of powerful leg muscles. In the wild, these physical attributes are crucial for avoiding predators, foraging for food, and navigating the forest canopy
+            <sup><a href="#berkleyStrom">8</a></sup>.
+            
+          </p>
+
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 id="pageEnd">Beyond</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          
+          <p>
+            Predator-Specific Adaptations:
+The adaptations of each group are influenced by the specific predators they face. For example, Old World monkeys in Africa and Asia have to contend with large cats like leopards and lions, as well as birds of prey and snakes. New World monkeys in Central and South America face threats from raptors, snakes, and some mammalian predators like ocelots.
+
+Environmental Factors:
+Moreover, environmental factors play a significant role in these adaptations. Old World monkeys often inhabit savanna and open woodland habitats in addition to forests, whereas New World monkeys are primarily found in tropical rainforests.
+
+In conclusion, both Old World and New World monkeys have evolved sophisticated and effective adaptations to avoid predators, but they are different because they evolved under different environmental pressures and face different predators. It's not a matter of which group is better adapted overall, but which adaptations are most effective for the specific challenges each group faces in their natural habitats.
+            <sup><a href="#stromEvidence">9</a></sup>.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 id="pageRef">References</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>
+            The following are sources this page draws information from. Please
+            click on the icons to open them in a new tab.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <span id="berkeleyArchean"
+                >1.Primates </span
+              >
+              <a
+                class="d-print-none"
+                href="https://primatesinc.com/oldworld_newworld/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                class="d-none d-print-block"
+                href="https://primatesinc.com/oldworld_newworld/"
+                >https://open.lib.umn.edu/humanbiology/chapter/1-7-the-evolution-of-primates/</a
+              >
+            </li>
+            <li class="list-group-item">
+              <span id="nasaTemps"
+                >2. Origins </span
+              >
+              <a
+                class="d-print-none"
+                href="https://www.newscientist.com/article/2240325-monkeys-made-their-way-from-africa-to-south-america-at-least-twice/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                class="d-none d-print-block"
+                href="https://www.newscientist.com/article/2240325-monkeys-made-their-way-from-africa-to-south-america-at-least-twice/"
+                >https://open.lib.umn.edu/humanbiology/chapter/1-7-the-evolution-of-primates/</a
+              >
+            </li>
+            <li class="list-group-item">
+              <span id="youngEarth"
+                >3. Fossils </span
+              >
+              <a
+                class="d-print-none"
+                href="https://www.washington.edu/news/2021/02/24/earliest-primate-fossils/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                class="d-none d-print-block"
+                href="https://www.washington.edu/news/2021/02/24/earliest-primate-fossils/"
+                >https://open.lib.umn.edu/humanbiology/chapter/1-7-the-evolution-of-primates/</a
+              >
+            </li>
+            <li class="list-group-item">
+              <span id="hydroTherm"
+                >4. Evolution of monkeys </span
+              >
+              <a
+                class="d-print-none"
+                href="https://www.earth.com/news/study-monkeys-are-much-smarter-than-we-thought-they-were/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                class="d-none d-print-block"
+                href="https://www.earth.com/news/study-monkeys-are-much-smarter-than-we-thought-they-were/"
+                >https://open.lib.umn.edu/humanbiology/chapter/1-7-the-evolution-of-primates/</a
+              >
+            </li>
+            <li class="list-group-item">
+              <span id="japanGeosci"
+                >5. Facts of Monkeys </span
+              >
+              <a
+                class="d-print-none"
+                href="https://humanorigins.si.edu/education/frequently-asked-questions"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                class="d-none d-print-block"
+                href="https://humanorigins.si.edu/education/frequently-asked-questions"
+                >https://open.lib.umn.edu/humanbiology/chapter/1-7-the-evolution-of-primates/</a
+              >
+            </li>
+            <li class="list-group-item">
+              <span id="lifeFirst2">6.Old world monkeys </span>
+              <a
+                class="d-print-none"
+                href="https://www.nature.com/scitable/knowledge/library/old-world-monkeys-83033815/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                class="d-none d-print-block"
+                href="https://www.nature.com/scitable/knowledge/library/old-world-monkeys-83033815/"
+                >https://open.lib.umn.edu/humanbiology/chapter/1-7-the-evolution-of-primates/</a
+              >
+            </li>
+            <li class="list-group-item">
+              <span id="berkleyCyano"
+                >7.old vs new </span
+              >
+              <a
+                class="d-print-none"
+                href="https://www.monkeyworlds.com/new-world-vs-old-world-monkeys/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                class="d-none d-print-block"
+                href="https://www.monkeyworlds.com/new-world-vs-old-world-monkeys/"
+                >https://open.lib.umn.edu/humanbiology/chapter/1-7-the-evolution-of-primates/</a
+              >
+            </li>
+            <li class="list-group-item">
+              <span id="berkleyStrom">8.Langur monkey</span>
+              <a
+                class="d-print-none"
+                href="https://www.dailymail.co.uk/news/article-6063957/Monkey-makes-incredible-160-foot-jump-electricity-pylons.html"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                class="d-none d-print-block"
+                href="https://www.dailymail.co.uk/news/article-6063957/Monkey-makes-incredible-160-foot-jump-electricity-pylons.html"
+                >https://open.lib.umn.edu/humanbiology/chapter/1-7-the-evolution-of-primates/</a
+              >
+            </li>
+            <li class="list-group-item">
+              <span id="stromEvidence"
+                >9. Conclusion</span
+              >
+              <a
+                class="d-print-none"
+                href="https://onlinelibrary.wiley.com/doi/abs/10.1002/evan.1360030207"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                class="d-none d-print-block"
+                href="https://onlinelibrary.wiley.com/doi/abs/10.1002/evan.1360030207"
+                >https://open.lib.umn.edu/humanbiology/chapter/1-7-the-evolution-of-primates/</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-auto">
+            <p><small>Written by Ryan Nourbakhsh for GEOL-201L</small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
